@@ -1,0 +1,17 @@
+{
+    "name": "Personal Extension",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "description": "For my personal use!",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png"
+      }
+    },
+    "icons": {
+      "16": "icon16.png"
+    },
+    
+    "permissions": ["activeTab",  "http://localhost:3000/"]
+  }

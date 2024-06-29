@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Extension</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="blogTopic" placeholder="Enter blog topic">
+        <button id="generateBlog">Create the blog with title and images</button>
+    </div>
+    <div class="container" id="generatedContent" style="display: none;">
+        <h2 id="blogTitle"></h2>
+        <div id="blogImages"></div>
+        <p>Content: </p>
+        <p id="blogContent"></p>
+    </div>
+    <div class="container">
+        <p>Price of WINR: <span id="winrPrice">Loading...</span></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
