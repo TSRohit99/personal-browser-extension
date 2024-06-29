@@ -13,5 +13,5 @@
       "16": "icon16.png"
     },
     
-    "permissions": ["activeTab",  "http://localhost:3000/"]
+    "permissions": ["activeTab",  "http://localhost:3000/", "https://personal-browser-extension.onrender.com"]
   }

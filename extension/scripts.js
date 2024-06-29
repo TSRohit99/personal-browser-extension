@@ -37,8 +37,10 @@ async function fetchTokenPrice(tokenId) {
             return;
         }
 
+        const apiPrefix = "https://personal-browser-extension.onrender.com";
+
         try {
-            const response = await fetch(`http://localhost:3000/generate?topic=${encodeURIComponent(topic)}`);
+            const response = await fetch(`${apiPrefix}/generate?topic=${encodeURIComponent(topic)}`);
             const data = await response.json();
 
             blogTitle.textContent = data.title;
