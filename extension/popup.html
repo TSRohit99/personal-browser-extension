@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="home-container">
+        <button id="generateBlogButton">Generate Blogs</button>
+        <button id="fetchCryptoButton">Fetch Crypto Details</button>
+    </div>
+    <div class="container" id="blogContainer" style="display: none;">
         <input type="text" id="blogTopic" placeholder="Enter blog topic">
         <button id="generateBlog">Create the blog with title and images</button>
     </div>
@@ -17,8 +21,17 @@
         <p>Content: </p>
         <p id="blogContent"></p>
     </div>
-    <div class="container">
-        <p>Price of WINR: <span id="winrPrice">Loading...</span></p>
+    <div class="container" id="cryptoContainer" style="display: none;">
+        <input type="text" id="cryptoAddress" placeholder="Enter CA">
+        <button id="fetchCryptoDetails">Fetch Details</button>
+        <button id="fetchCryptoDetailsWINR">Fetch Details(WINR)</button>
+        <div id="cryptoDetails">
+            <p>Symbol: <span id="sym">Loading...</span></p>
+            <p>Price : <span id="price">Loading...</span></p>
+            <p>Circulating Supply : <span id="cs">Loading...</span></p>
+            <p>Total Supply : <span id="ts">Loading...</span></p>
+            <p>Max supply : <span id="ms">Loading...</span></p>
+        </div>
     </div>
     <script src="scripts.js"></script>
 </body>
